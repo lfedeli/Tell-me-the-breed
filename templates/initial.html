@@ -1,0 +1,27 @@
+<!doctype html>
+  <head lang="en">
+  <meta charset="UTF-8">
+  <script language="JavaScript">
+    function showInput() {
+        document.getElementById('display').innerHTML = 
+                    "we are calculating...";
+    }
+  </script>
+
+
+
+    <title>Python Flask Bucket List App</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ 
+ 
+</head> 
+ <h1>Upload new File</h1>
+   <form method=post enctype=multipart/form-data>
+      <p><input type=file name=file >
+         <input type=submit value=Upload onclick="showInput();">
+   </form>
+  <p><span id='display'></span></p>
